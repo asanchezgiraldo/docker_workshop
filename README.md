@@ -20,7 +20,7 @@ Activities
 
 ```bash
 #list containers
-docekr ps -a
+docker ps -a
 
 #stop and remove container
 docker stop <conteinerID>
