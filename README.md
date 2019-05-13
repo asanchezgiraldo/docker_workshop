@@ -12,6 +12,7 @@ Activities
 
 - [ ] Create docker image (using dockerfile)
 
+- [ ] push to docker repo
 
 ## Tricks
 
