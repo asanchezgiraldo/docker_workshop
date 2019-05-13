@@ -12,7 +12,7 @@ Activities
 
 - [ ] Create docker image (using dockerfile)
 
-- [ ] push to docker repo
+- [ ] push to docker repo (https://docs.docker.com/docker-hub/)
 
 ## Tricks
 
