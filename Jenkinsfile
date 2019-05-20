@@ -12,6 +12,11 @@ node('mac') {
     // Write an useless file, which is not needed to be archived.
     writeFile file: "output/uselessfile.md", text: "This file is useless, no need to archive it."
 
+    stage "Test Newman"
+    
+    //this step runs newman
+    sh "newman run http://bit.ly/2VQV2LS"
+    
     stage "Archive build output"
     
     // Archive the build output artifacts.
