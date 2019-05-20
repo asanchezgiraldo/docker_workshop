@@ -2,8 +2,13 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'echo "hello"'
+            // some block
             }
+        }
+        stage('test) {
+              steps{
+              // some block
+              }
         }
     }
 }
