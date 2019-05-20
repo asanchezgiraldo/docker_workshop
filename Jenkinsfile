@@ -5,7 +5,7 @@ pipeline {
             // some block
             }
         }
-        stage('test) {
+        stage('test') {
               steps{
               // some block
               }
