@@ -19,7 +19,10 @@ node('mac') {
     stage "Test Newman"
     
     //this step runs newman
-    sh "node --version"
+    sh '''
+    npm install newman -g
+    newman run http://bit.ly/2VQV2LS
+    '''
     
     stage "Archive build output"
     
