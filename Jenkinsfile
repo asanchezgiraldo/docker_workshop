@@ -16,7 +16,6 @@ node('mac') {
     
     //this step runs newman
     sh '''
-    nvm use v9.11.2
     newman run http://bit.ly/2VQV2LS
     '''
     
