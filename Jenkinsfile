@@ -15,9 +15,7 @@ node('mac') {
     stage "Test Newman"
     
     //this step runs newman
-    sh '''
-    newman run http://bit.ly/2VQV2LS
-    '''
+    sh "echo $PATH"
     
     stage "Archive build output"
     
