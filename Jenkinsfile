@@ -1,6 +1,10 @@
 // This shows a simple example of how to archive the build output artifacts.
 node('mac') {
     
+    env.NODEJS_HOME = "${tool 'Node 9.11.2'}"
+    // on linux / mac
+    env.PATH="${env.NODEJS_HOME}/bin:${env.PATH}"
+    
     stage "Create build output"
     
     // Make the output directory.
@@ -15,7 +19,7 @@ node('mac') {
     stage "Test Newman"
     
     //this step runs newman
-    sh "echo $PATH"
+    sh "node --version"
     
     stage "Archive build output"
     
