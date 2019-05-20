@@ -1,7 +1,7 @@
 // This shows a simple example of how to archive the build output artifacts.
 node('mac') {
     
-    env.NODEJS_HOME = "${tool 'Node 9.11.2'}"
+    env.NODEJS_HOME = "${tool 'node9.11.2'}"
     // on linux / mac
     env.PATH="${env.NODEJS_HOME}/bin:${env.PATH}"
     
